@@ -1,0 +1,18 @@
+ <a name="team"></a>
+  <h2 class="text-center">The Team</h2>
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-lg-3">
+      <p>&nbsp;</p>
+    </div>
+    <div class="col-lg-3 text-center" *ngFor="let t of team">
+      <img class="rounded-circle" src="{{t.pic}}" alt="Generic placeholder image" width="140" height="140">
+      <h2>{{ t.streamer }} <a href="{{ t.twitchUrl }}" target="_blank" class="btn btn-xs btn-success {{t.status}}">Online</a></h2>
+      <p class="lead">{{ t.bio }}</p>
+      <p class="lead"><a class="btn btn-twitch" href="{{ t.twitchUrl }}" role="button">View Twitch</a></p>
+    </div>
+    <div class="col-lg-3">
+      <p>&nbsp;</p>
+    </div>
+  </div>
+<hr>
