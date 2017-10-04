@@ -146,7 +146,7 @@ module.exports = "<div class=\"container\">\n  <div class=\"container-fluid feat
 /***/ 155:
 /***/ (function(module, exports) {
 
-module.exports = " <a name=\"team\"></a>\n  <h2 class=\"text-center\">The Team</h2>\n  <!-- Three columns of text below the carousel -->\n  <div class=\"row\">\n    <div class=\"col-lg-3\">\n      <p>&nbsp;</p>\n    </div>\n    <div class=\"col-lg-3 text-center\" *ngFor=\"let t of team\">\n      <img class=\"rounded-circle\" src=\"{{t.pic}}\" alt=\"Generic placeholder image\" width=\"140\" height=\"140\">\n      <h2>{{ t.streamer }} <a href=\"{{ t.twitchUrl }}\" target=\"_blank\" class=\"btn btn-xs btn-success {{t.status}}\">Online</a></h2>\n      <p class=\"lead\">{{ t.bio }}</p>\n      <p class=\"lead\"><a class=\"btn btn-twitch\" href=\"{{ t.twitchUrl }}\" role=\"button\">View Twitch</a></p>\n    </div>\n    <div class=\"col-lg-3\">\n      <p>&nbsp;</p>\n    </div>\n  </div>\n<hr>\n"
+module.exports = " <a name=\"team\"></a>\n  <h2 class=\"text-center\">The Team</h2>\n  <!-- Three columns of text below the carousel -->\n  <div class=\"row\">\n    <div class=\"col-lg-6 text-center\" *ngFor=\"let t of team\">\n      <img class=\"rounded-circle\" src=\"{{t.pic}}\" alt=\"Generic placeholder image\" width=\"140\" height=\"140\">\n      <h2>{{ t.streamer }} <a href=\"{{ t.twitchUrl }}\" target=\"_blank\" class=\"btn btn-xs btn-success {{t.status}}\">Online</a></h2>\n      <p class=\"lead\">{{ t.bio }}</p>\n      <p class=\"lead\"><a class=\"btn btn-twitch\" href=\"{{ t.twitchUrl }}\" role=\"button\">View Twitch</a></p>\n    </div>\n    <hr>\n"
 
 /***/ }),
 
